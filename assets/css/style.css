@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: small;
+    color: black;
 }
 
 .flexible{
@@ -16,6 +16,8 @@
     width: 80%;
     margin: 0 auto;
 }
+
+
 
 
 .debug{
@@ -50,6 +52,59 @@
     justify-content: flex-end;
 }
 
+.justbetween{
+    justify-content: space-between;
+}
+
 .alicenter{
     align-items: center;
 }
+
+.totalpadding-10{
+    padding: 10px;
+}
+
+.padding-inline-10{
+    padding: 0 10px;
+}
+
+.padding-top-10{
+    padding-top: 10px;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-lightblue{
+    background-color: rgb(90, 179, 209);
+}
+
+
+/* Elementi Main */
+
+
+/* (?Perché non mi funziona mai il none sul text-decoration e il color white come classe a parte?) */
+
+/* .clearnav{
+    text-decoration: none;
+    color: white;
+} */
+
+.lefthead a, .righthead a{
+    text-decoration: none;
+}
+
+/* .underline-link{
+    border-bottom: 2px solid black;
+    
+} */
+
+/* .phantomline:hover .underlink */
+
+.button-a{
+    padding: 1px 2px;
+    background-color: rgb(69, 69, 155);
+    color: #fff;
+}
+
