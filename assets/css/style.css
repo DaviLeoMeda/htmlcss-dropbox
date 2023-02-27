@@ -1,0 +1,55 @@
+/* Utilities */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+.flexible{
+    display: flex;
+}
+
+
+.container-80{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.debug{
+    border: 2px dashed black;
+}
+
+.relat{
+    position: relative;
+}
+
+.abso{
+    position: absolute;
+}
+
+.fix{
+    position: fixed;
+}
+
+.wrapped{
+    flex-wrap: wrap;
+}
+
+.bc-darkgrey{
+    background-color: rgb(32, 32, 32);
+}
+
+.juststart{
+    justify-content: flex-start;
+}
+
+.justend{
+    justify-content: flex-end;
+}
+
+.alicenter{
+    align-items: center;
+}
