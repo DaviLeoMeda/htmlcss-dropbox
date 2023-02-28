@@ -17,7 +17,10 @@
     margin: 0 auto;
 }
 
-
+.container-50 {
+    width: 50%;
+    margin: 0 auto;
+}
 
 
 .debug {
@@ -44,6 +47,7 @@
     background-color: rgb(32, 32, 32);
 }
 
+
 .juststart {
     justify-content: flex-start;
 }
@@ -68,20 +72,44 @@
     align-content: center;
 }
 
-.totalpadding-10 {
+.padding-10 {
     padding: 10px;
+}
+
+.padding-20 {
+    padding: 20px;
 }
 
 .padding-inline-10 {
     padding: 0 10px;
 }
 
+.padding-inline-50 {
+    padding: 50px 0;
+}
+
 .padding-top-10 {
     padding-top: 10px;
 }
 
+.padding-top-20 {
+    padding-top: 20px;
+}
+
 .padding-top-50 {
     padding-top: 50px;
+}
+
+.padding-block-20 {
+    padding: 20px 0;
+}
+
+.padding-50 {
+    padding: 50px;
+}
+
+.border {
+    border: 1px solid black;
 }
 
 .bg-white {
@@ -100,11 +128,21 @@
     margin: 10px;
 }
 
+.margin-top-100 {
+    margin-top: 100px;
+}
 
-/* Elementi Main */
+.margin-right-30 {
+    margin-right: 30px;
+}
+
+.margin-inline-30 {
+    margin: 0 30px;
+}
 
 
-/* (?Perché non mi funziona mai il none sul text-decoration e il color white come classe a parte?) */
+/* First Elements - Main */
+
 
 .clearnav {
     text-decoration: none;
@@ -148,6 +186,7 @@
 
 .bottomhead div div h1 {
     margin: 30px 0;
+    font-size: 4em;
 }
 
 p a {
@@ -162,4 +201,32 @@ p a {
 
 .square-image img {
     bottom: -60px;
+}
+
+.second-title {
+    font-size: 2em;
+}
+
+/* <!-- Second pard - Slides --> */
+
+/* .slides div {
+    flex-basis: calc(100% / 3 - 3%);
+    background-color: red;
+} */
+
+
+.slides div {
+    flex-basis: calc(70% / 3 - 3%);
+}
+
+/* Perché non mi cambia la posizione delle colonne nonostante cambi il justify-content? */
+
+
+
+.slides {
+    justify-content: center;
+}
+
+.slides div * {
+    padding: 10px 10px;
 }
