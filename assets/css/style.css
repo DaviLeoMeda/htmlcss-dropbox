@@ -84,6 +84,10 @@
     padding: 0 10px;
 }
 
+.padding-inline-20 {
+    padding: 0 20px;
+}
+
 .padding-inline-50 {
     padding: 50px 0;
 }
@@ -112,14 +116,6 @@
     border: 1px solid black;
 }
 
-.bg-white {
-    background-color: white;
-}
-
-.bg-lightblue {
-    background-color: rgb(90, 179, 209);
-}
-
 .inline-block {
     display: inline-block;
 }
@@ -140,14 +136,23 @@
     margin: 0 30px;
 }
 
+.bg-white {
+    background-color: white;
+}
+
+.bg-lightblue {
+    background-color: rgb(90, 179, 209);
+}
+
 
 /* First Elements - Main */
 
-
-.clearnav {
-    text-decoration: none;
-    color: white;
+.navhead {
+    height: 80px;
+    line-height: 80px;
 }
+
+
 
 /* .lefthead a, .righthead a{
     text-decoration: none;
@@ -166,6 +171,22 @@
     color: #fff;
 }
 
+.lefthead li,
+.righthead li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lefthead li img {
+    vertical-align: middle;
+}
+
+
+/* Bottom Header Elements */
 
 .square-text {
     width: 40%;
@@ -187,10 +208,6 @@
 .bottomhead div div h1 {
     margin: 30px 0;
     font-size: 4em;
-}
-
-p a {
-    text-decoration: none;
 }
 
 
@@ -229,4 +246,27 @@ p a {
 
 .slides div * {
     padding: 10px 10px;
+}
+
+#firstlist li::marker {
+    content: " ";
+    font-size: 1.5em;
+    color: blueviolet;
+}
+
+#firstlist li:nth-child(1)::marker {
+    content: "<i class=" fa-solid fa-user"></i>  ";
+}
+
+#firstlist li:nth-child(2)::marker {
+    content: "<i class=" fa-solid fa-folder"></i>  ";
+}
+
+#firstlist li:nth-child(3)::marker {
+    content: "<i class=" fa-solid fa-share-nodes"></i>  ";
+}
+
+#firstlist li {
+    position: relative;
+    max-width: 70ch;
 }
