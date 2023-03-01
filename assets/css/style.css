@@ -375,9 +375,6 @@ a {
     margin-top: 20px;
 }
 
-#br {
-    width: 40%;
-}
 
 #br span {
     border-bottom: 1px solid blue;
@@ -504,6 +501,7 @@ a {
     background-color: rgb(245, 245, 245);
     width: 40vw;
     height: 30vw;
+    overflow: auto;
 }
 
 .overflow-central div img {
