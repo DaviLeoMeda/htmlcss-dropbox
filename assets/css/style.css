@@ -448,6 +448,10 @@ a {
     position: relative;
 }
 
+.square:hover {
+    border: 25px solid rgba(164, 0, 0, 0.4);
+}
+
 .square img {
     width: 50%;
     filter: invert(1);
