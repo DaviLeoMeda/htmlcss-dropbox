@@ -296,51 +296,68 @@ a {
 
 /* da correggere il # firstlist */
 
-#firstlist li::before {
+.firstlist li::before {
     content: " ";
     font-size: 1em;
     color: black;
-    list-style: none;
 }
 
-#firstlist li:nth-child(1)::before {
+.firstlist li:nth-child(1)::before {
     content: "\f007";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
 
-#firstlist li:nth-child(2)::before {
+.firstlist li:nth-child(2)::before {
     content: "\f07b";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
 
-#firstlist li:nth-child(3)::before {
+.firstlist li:nth-child(3)::before {
     content: "\f07b";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
 }
 
-#firstlist li {
+.secondlist li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.secondlist li {
     left: 5px;
     font-size: small;
+    list-style: none;
 }
 
-.firstcolumn .button-b {
+.firstlist li {
+    left: 5px;
+    font-size: small;
+    list-style: none;
+}
+
+.firstlist .button-b {
     text-align: center;
 }
+
+.firstlist div {
+    margin: 40px 0;
+}
+
 
 .ultimopiano {
     margin-bottom: 40px;
     margin-top: 20px;
 }
 
-br {
+#br {
     width: 40%;
-    height: 1px;
-    text-align: center;
-    padding: 0 20px;
-    margin: 0 20px;
+}
+
+#br span {
+    border-bottom: 1px solid blue;
 }
 
 .selling {
