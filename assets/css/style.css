@@ -555,9 +555,15 @@ a {
     padding: 20px 5px;
 }
 
+
 .switch:hover+.phantom {
     display: block;
 }
+
+.switch:hover i {
+    transform: rotate(180deg);
+}
+
 
 .list h3,
 .list ul li a {
@@ -583,6 +589,11 @@ a {
     border-bottom: 1px solid white;
 }
 
-.language select::before {
-    content: ;
+
+.language::before {
+    content: "\f7a2";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: white;
+
 }
