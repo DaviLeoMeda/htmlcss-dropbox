@@ -11,6 +11,11 @@
     display: flex;
 }
 
+.container-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 .container-60 {
     width: 60%;
@@ -213,15 +218,33 @@
     color: #fff;
 }
 
+.button-a:hover {
+    background-color: aquamarine;
+    color: black;
+    box-shadow: -2px -2px 5px 5px blue;
+}
+
 .button-b {
     padding: 2px 8px;
     background-color: rgb(69, 69, 155);
     color: #fff;
 }
 
+.button-b:hover {
+    background-color: aquamarine;
+    color: black;
+    box-shadow: -2px -2px 5px 5px blue;
+}
+
 .button-c {
     padding: 5px 20px;
     background-color: #fff;
+}
+
+.button-c:hover {
+    background-color: rgb(25, 106, 79);
+    color: rgb(153, 62, 62);
+    box-shadow: -2px -2px 5px 5px rgb(12, 12, 162);
 }
 
 .lefthead li,
@@ -507,7 +530,8 @@ a {
 }
 
 .faq-container {
-    margin-top: 100px;
+    margin: 100px auto;
+
 }
 
 .faq-container h2 {
@@ -518,4 +542,49 @@ a {
 .top-under {
     border-bottom: 1px solid rgb(87, 87, 163);
     border-top: 1px solid rgb(87, 87, 163);
+}
+
+.faq p {
+    width: 80%;
+}
+
+.faq span {
+    width: 5%;
+}
+
+.phantom {
+    display: none;
+    padding: 20px 5px;
+}
+
+.switch:hover+.phantom {
+    display: block;
+}
+
+.list h3,
+.list ul li a {
+    color: #fff;
+}
+
+.list ul li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.list {
+    width: 15%;
+}
+
+.list h3 {
+    padding: 30px 0;
+}
+
+
+.language {
+    margin-top: 50px;
+    border-bottom: 1px solid white;
+}
+
+.language select::before {
+    content: ;
 }
