@@ -104,6 +104,10 @@
     padding-top: 50px;
 }
 
+.padding-block-10 {
+    padding: 10px 0;
+}
+
 .padding-block-20 {
     padding: 20px 0;
 }
@@ -124,8 +128,20 @@
     margin: 10px;
 }
 
+.margin-block-20 {
+    margin: 20px 0;
+}
+
 .margin-top-100 {
     margin-top: 100px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
 }
 
 .margin-right-30 {
@@ -144,14 +160,31 @@
     background-color: rgb(90, 179, 209);
 }
 
+.text-decoration-on {
+    text-decoration: underline;
+    color: blue;
+}
 
 /* First Elements - Main */
 
 .navhead {
     height: 80px;
+    width: 100%;
     line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
+
+.lefthead li:not(#logo):hover {
+    border-bottom: 5px solid black;
+}
+
+.righthead li:not(.button-a):hover {
+    border: 2px solid black;
+}
 
 
 /* .lefthead a, .righthead a{
@@ -160,13 +193,19 @@
 
 /* .underline-link{
     border-bottom: 2px solid black;
-    
+
 } */
 
 /* .phantomline:hover .underlink */
 
 .button-a {
     padding: 3px 6px;
+    background-color: rgb(69, 69, 155);
+    color: #fff;
+}
+
+.button-b {
+    padding: 2px 8px;
     background-color: rgb(69, 69, 155);
     color: #fff;
 }
@@ -226,47 +265,91 @@ a {
 
 /* <!-- Second pard - Slides --> */
 
-/* .slides div {
-    flex-basis: calc(100% / 3 - 3%);
-    background-color: red;
-} */
-
+#radiobuttons {
+    margin: 50px 0;
+}
 
 .slides div {
-    flex-basis: calc(70% / 3 - 3%);
+    flex-basis: 30%;
 }
 
 /* Perché non mi cambia la posizione delle colonne nonostante cambi il justify-content? */
 
 
 
-.slides {
-    justify-content: center;
-}
-
 .slides div * {
     padding: 10px 10px;
 }
 
-#firstlist li::marker {
+
+#firstlist li::before {
     content: " ";
-    font-size: 1.5em;
-    color: blueviolet;
+    font-size: 1em;
+    color: black;
+    list-style: none;
 }
 
-#firstlist li:nth-child(1)::marker {
-    content: "<i class=" fa-solid fa-user"></i>  ";
+#firstlist li:nth-child(1)::before {
+    content: "\f007";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
-#firstlist li:nth-child(2)::marker {
-    content: "<i class=" fa-solid fa-folder"></i>  ";
+#firstlist li:nth-child(2)::before {
+    content: "\f07b";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
-#firstlist li:nth-child(3)::marker {
-    content: "<i class=" fa-solid fa-share-nodes"></i>  ";
+#firstlist li:nth-child(3)::before {
+    content: "\f07b";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
 #firstlist li {
-    position: relative;
-    max-width: 70ch;
+    left: 5px;
+    font-size: small;
+}
+
+.firstcolumn .button-b {
+    text-align: center;
+}
+
+.ultimopiano {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+br {
+    width: 40%;
+    height: 1px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+.selling {
+    margin: 50px auto;
+}
+
+.sellingbtn {
+    top: 25px;
+    right: 20px;
+}
+
+.sellingbtn span a {
+    color: #fff;
+}
+
+.boximg {
+    flex-basis: 60%;
+}
+
+.dropart {
+    flex-basis: 40%;
+}
+
+.boximg img {
+    width: 100%;
 }
