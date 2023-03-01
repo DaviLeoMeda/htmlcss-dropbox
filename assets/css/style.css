@@ -120,6 +120,14 @@
     padding: 20px 0;
 }
 
+.padding-block-50 {
+    padding: 50px 0;
+}
+
+.padding-block-70 {
+    padding: 70px 0;
+}
+
 .padding-50 {
     padding: 50px;
 }
@@ -199,17 +207,6 @@
 }
 
 
-/* .lefthead a, .righthead a{
-    text-decoration: none;
-} */
-
-/* .underline-link{
-    border-bottom: 2px solid black;
-
-} */
-
-/* .phantomline:hover .underlink */
-
 .button-a {
     padding: 3px 6px;
     background-color: rgb(69, 69, 155);
@@ -220,6 +217,11 @@
     padding: 2px 8px;
     background-color: rgb(69, 69, 155);
     color: #fff;
+}
+
+.button-c {
+    padding: 5px 20px;
+    background-color: #fff;
 }
 
 .lefthead li,
@@ -405,18 +407,26 @@ br {
 
 .square {
     width: 50%;
+    height: 50%;
+    position: relative;
 }
 
 .square img {
-    width: 100%;
-    color: white;
+    width: 50%;
+    filter: invert(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .squares-left,
-.squares-right,
-.overflow-central {
+.squares-right {
     width: 30vw;
+    height: 30vw;
 }
+
+
 
 .squares-left div:nth-child(1) {
     background-color: rgb(162, 211, 155);
@@ -448,4 +458,47 @@ br {
 
 .squares-right div:nth-child(4) {
     background-color: rgb(255, 216, 48);
+}
+
+.overflow-central {
+    background-color: rgb(245, 245, 245);
+    width: 40vw;
+    height: 30vw;
+}
+
+.overflow-central div img {
+    width: 70%;
+    padding-bottom: 30px;
+}
+
+.overflow-central div {
+    height: 40%;
+    width: 80%;
+    padding: 30px 40px;
+}
+
+.undercards div section {
+    width: calc(100% / 3);
+}
+
+.undercards {
+    background-color: rgb(245, 245, 245);
+}
+
+.undercards div section h2 {
+    font-size: 2rem;
+}
+
+.faq-container {
+    margin-top: 100px;
+}
+
+.faq-container h2 {
+    font-size: 2rem;
+    padding-bottom: 40px;
+}
+
+.top-under {
+    border-bottom: 1px solid rgb(87, 87, 163);
+    border-top: 1px solid rgb(87, 87, 163);
 }
