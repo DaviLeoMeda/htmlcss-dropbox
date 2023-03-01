@@ -191,11 +191,11 @@
 
 
 .lefthead li:not(#logo):hover {
-    border-bottom: 5px solid black;
+    border-bottom: 3px solid black;
 }
 
-.righthead li:not(.button-a):hover {
-    border: 2px solid black;
+.righthead li:not(#no-ul):hover {
+    border-bottom: 3px solid black;
 }
 
 
@@ -285,14 +285,14 @@ a {
     flex-basis: 30%;
 }
 
-/* Perché non mi cambia la posizione delle colonne nonostante cambi il justify-content? */
-
 
 
 .slides div * {
     padding: 10px 10px;
 }
 
+
+/* da correggere il # firstlist */
 
 #firstlist li::before {
     content: " ";
@@ -366,10 +366,15 @@ br {
     width: 100%;
 }
 
+.lastcardsout h3 {
+    margin-bottom: 30px;
+}
+
 .card {
     flex-basis: 30%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .cardimg {
@@ -382,4 +387,65 @@ br {
 
 .cardimg img {
     width: 100%;
+}
+
+.cardtext h3 {
+    padding-bottom: 10px;
+}
+
+#lastphrase {
+    margin-top: 120px;
+}
+
+#link-basic {
+    text-decoration: underline;
+    color: blue;
+    padding-top: 30px;
+}
+
+.square {
+    width: 50%;
+}
+
+.square img {
+    width: 100%;
+    color: white;
+}
+
+.squares-left,
+.squares-right,
+.overflow-central {
+    width: 30vw;
+}
+
+.squares-left div:nth-child(1) {
+    background-color: rgb(162, 211, 155);
+}
+
+.squares-left div:nth-child(2) {
+    background-color: rgb(97, 8, 43);
+}
+
+.squares-left div:nth-child(3) {
+    background-color: rgb(0, 147, 206);
+}
+
+.squares-left div:nth-child(4) {
+    background-color: rgb(255, 28, 28);
+}
+
+.squares-right div:nth-child(1) {
+    background-color: rgb(213, 0, 31);
+}
+
+.squares-right div:nth-child(2) {
+    background-color: rgb(180, 208, 231);
+}
+
+.squares-right div:nth-child(3) {
+    background-color: rgb(13, 36, 129);
+}
+
+.squares-right div:nth-child(4) {
+    background-color: rgb(255, 216, 48);
 }
